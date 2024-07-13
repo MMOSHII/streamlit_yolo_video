@@ -20,8 +20,8 @@ def app():
     if uploaded_file is not None: 
         # Generate unique filenames to avoid conflicts
         unique_id = str(uuid.uuid4().hex)[:8]  # Get first 8 characters of UUID for filename
-        input_path = os.path.join(os.getcwd(), f"temp_{unique_id}.mp4")
-        output_path = os.path.join(os.getcwd(), f"output_{unique_id}.mp4")
+        input_path = os.path.join(os.getcwd(), f"temp_{unique_id}.jpeg")
+        output_path = os.path.join(os.getcwd(), f"output_{unique_id}.jpeg")
 
         try:
             with open(input_path, "wb") as temp_file:
