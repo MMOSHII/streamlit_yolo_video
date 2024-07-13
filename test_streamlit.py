@@ -5,9 +5,9 @@ from ultralytics import YOLO
 import uuid
 
 def app():
-    st.header('Object Detection Web App')
+    st.header('Object Detection Image Web App')
     st.subheader('Powered by YOLOv8')
-    st.write('Welcome!')
+    st.write('Yo!, Hello')
     model = YOLO('yolov8n.pt')
     object_names = list(model.names.values())
 
