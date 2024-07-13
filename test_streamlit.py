@@ -12,7 +12,7 @@ def app():
     object_names = list(model.names.values())
 
     with st.form("my_form"):
-        uploaded_file = st.file_uploader("Upload video", type=['mp4'])
+        uploaded_file = st.file_uploader("Upload image", type=['jpg', 'jpeg', 'png'])
         selected_objects = st.multiselect('Choose objects to detect', object_names, default=['person']) 
         min_confidence = st.slider('Confidence score', 0.0, 1.0)
         st.form_submit_button(label='Submit')
