@@ -52,7 +52,7 @@ def app():
             if os.path.exists(input_path):
                 os.remove(input_path)
             if os.path.exists(output_path):
-                st.video(output_path)
+                st.remove(output_path)
 
         except Exception as e:
             st.error(f"An error occurred: {e}")
