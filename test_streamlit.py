@@ -7,7 +7,7 @@ import uuid
 def app():
     st.header('Object Detection Image Web App')
     st.subheader('Powered by YOLOv8')
-    st.write('Yo!, Hello')
+    st.write('welcome!')
     model = YOLO('yolov8n.pt')
     object_names = list(model.names.values())
 
