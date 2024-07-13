@@ -24,7 +24,7 @@ def app():
         output_path = os.path.join(os.getcwd(), f"output_{unique_id}.mp4")
 
        try:
-            with open(input_path, "wb") as temp_file:
+           with open(input_path, "wb") as temp_file:
                 temp_file.write(uploaded_file.read())
 
             image = cv2.imread(input_path)
